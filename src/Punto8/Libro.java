@@ -10,9 +10,16 @@ public class Libro { // Creamos la clase libro
     private int ISBN; // Creamos las variables que vamos a necesitar
     private String titulo, autor; // Creamos las variables que vamos a necesitar
     private double precio; // Creamos las variables que vamos a necesitar
-   
+    private String categoria;
     public Libro() { // Constructor1 
     }
+     public Libro(int ISBN, String titulo, String autor, double precio, String categoria) { // Constructor3 para el punto 12 
+      this.ISBN = ISBN; // Le damos las variables
+        this.titulo = titulo; // Le damos las variables
+        this.autor = autor; // Le damos las variables
+        this.precio = precio; // Le damos las variables
+        this.categoria = categoria; // Le damos las variables
+     }
 
     public Libro(int ISBN, String titulo, String autor, double precio) { // Constructor 2 
         this.ISBN = ISBN; // Le damos las variables
@@ -51,6 +58,14 @@ public class Libro { // Creamos la clase libro
 
     public void setPrecio(double precio) {
         this.precio = precio;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
   
