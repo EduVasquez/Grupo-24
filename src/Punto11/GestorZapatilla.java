@@ -14,16 +14,12 @@ import java.util.ArrayList;
 public class GestorZapatilla {
     private ArrayList<Zapatilla> zapatillas = new ArrayList();
 
-    /**
-     * @return the circulos
-     */
+    
     public ArrayList<Zapatilla> getZapatilla() {
         return zapatillas;
     }
 
-    /**
-     * @param circulos the circulos to set
-     */
+  
     public void setZapatilla(ArrayList<Zapatilla> zapatilla) {
         this.zapatillas = zapatilla;
     }
