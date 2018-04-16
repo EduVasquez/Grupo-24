@@ -14,13 +14,11 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-        String nom, marca, est;
-        int lim;
         char resp;
         int j=0;
         int i=0;
         Zapatilla zapa = new Zapatilla();
-        GestorZapatilla gc = new GestorZapatilla();
+        GestorZapatilla gz = new GestorZapatilla();
 
         do{
              j=j+1;
@@ -32,7 +30,7 @@ public class Principal {
              System.out.print("Ingrese numero de zapatilla : ");
              int num = scn.nextInt();
              Zapatilla zap = new Zapatilla(color, num, zapa.getMarca(), zapa.getEstado());
-             gc.agregarZapatilla(zap);
+             gz.agregarZapatilla(zap);
              System.out.println("   ");
              System.out.print("Desea ingresar mas datos s/n : ");
              resp = scn.next().charAt(0);
@@ -46,7 +44,7 @@ public class Principal {
         System.out.println("******************************************************");
          System.out.println("N°"+ " \t"+"Color"+"   \t"+"Nro de Calzado"+"   \t"+"Marca"+"   \t"+"Estado");
          System.out.println("---------------------------------------------------------------------------");
-        for(Zapatilla circulo: gc.getZapatilla()){
+        for(Zapatilla circulo: gz.getZapatilla()){
             
             i=i+1;
             System.out.println(i+"\t"+ circulo.getColor()+"              \t"+circulo.getNumero()+"            \t"+circulo.getMarca()+"    \t"+circulo.getEstado());
