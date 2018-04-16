@@ -1,6 +1,4 @@
 package Punto2;
-
-import Punto1.Punto;
 import java.util.Scanner;
 
 /**
@@ -19,14 +17,14 @@ public class principal {
         base= scn.nextInt();
         System.out.println("Ingresar la altura: ");
         altura= scn.nextInt();
-        Rectangulo rectangulo = new Rectangulo();
+        Rectangulo rectangulo = new Rectangulo(x,y,base,altura);
         System.out.println("La primera cordenada del punto es: ("+x+","+y+")");
-        int nuevax =rectangulo.calularPuntoUno(x, base);
+        int nuevax =rectangulo.calularPuntoUno();
         System.out.println("La segunda cordenada del punto es: ("+nuevax+","+y+")");
-        int nuevay=rectangulo.calularPuntoDos(y, altura);
+        int nuevay=rectangulo.calularPuntoDos();
         System.out.println("La tercera cordenada del punto es: ("+nuevax+","+nuevay+")");
         System.out.println("La cuarta cordenada del punto es: ("+x+","+nuevay+")");
-        System.out.println("El perimetro del rectangulo es: "+ rectangulo.calcularPerimetro(altura, base));
-        System.out.println("La superficie del rectangulo es: "+rectangulo.calcularSuperficie(altura, base));
+        System.out.println("El perimetro del rectangulo es: "+ rectangulo.calcularPerimetro());
+        System.out.println("La superficie del rectangulo es: "+rectangulo.calcularSuperficie());
     }
 }
