@@ -14,8 +14,7 @@ public class Principal {
      Scanner S = new Scanner(System.in);  // Creamos un objeto de tipo Scanner
      boolean boleano = false; // Una variable boolean
    String titulo=""; // El título que guardará los títulos de las películas
-      Libro NuevoLibro[] = new Libro[9]; // Definimos un arreglo y le deremos los datos al constructor de la clase Libro
-        System.out.println(NuevoLibro.length);
+      Libro NuevoLibro[] = new Libro[9]; // Definimos un arreglo y le deremos los datos al constructor de la clase Libro   
       NuevoLibro[0] = new Libro(683, "El rey Leon", "Pedrouno", 9932.99); // Le damos en la posición 0 los datos al constructor
       NuevoLibro[1] = new Libro(686, "Marvel Los Vengadores", "Pedrodos", 9932.99); // Le damos en la posición 1 los datos al constructor
       NuevoLibro[2] = new Libro(688, "Harry Potter", "Pedrotres", 9932.99); // Le damos en la posición 2 los datos al constructor
@@ -52,5 +51,9 @@ public class Principal {
     else{
         System.out.println("No se encontró el libro."); // Si boleano es falso, es porque no se encontró lo que el usuario buscó 
     }
+    
+    
+    
+    
     }
 }
