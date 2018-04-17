@@ -9,7 +9,7 @@ package Punto12;
 
 
 
-
+// Se puso otra clase Libro en el punto 12 porque nos dio un error y no dejaba hacer commit ni push desde el punto 8
 
 public class Libro { // Creamos la clase libro
     private int ISBN; // Creamos las variables que vamos a necesitar
@@ -84,7 +84,7 @@ public class Libro { // Creamos la clase libro
         System.out.println(getISBN()+"\t"+getTitulo()+"                     \t"+getAutor()+"\t"+getPrecio());
     }
 
-    public String mostrarTitulo(){
+    public String mostrarTitulo(){  // Método para mostrar el título
         
             return "El título es: "+ titulo;
     }
