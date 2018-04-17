@@ -64,25 +64,40 @@ public class Principal {
             switch (opcion2){
                 case 1: 
                     String novela = "Novela";
-              for (Libro e: listaLibro ){ 
-             if(novela.equals(e.getCategoria())){
-                 System.out.println(e.mostrarLibro());            
-             } }break;
+                    System.out.println("-------------------------------------------------");
+                    System.out.println("ISBN"+"       \t"+"Nombre"+"       \t"+"Autor"+"        \t"+"Precio");
+                    System.out.println("-------------------------------------------------");
+                    for (Libro e: listaLibro ){ 
+                         if(novela.equals(e.getCategoria())){
+                          // System.out.println(e.mostrarLibro);
+                         e.mostrarLibro();
+                         } 
+                    }break;
               
                 case 2: 
-                    String programacion = "Programación";
+                    String programacion = "Programación1";
+                    System.out.println("------------------------------------------------------");
+                    System.out.println("ISBN"+"           \t"+"Nombre"+"           \t"+"Autor"+"               \t"+"Precio");
+                    System.out.println("------------------------------------------------------");
                     for (Libro e: listaLibro ){ 
-             if(programacion.equals(e.getCategoria())){
-                 System.out.println(e.mostrarLibro());
-             }}break;
+                         if(programacion.equals(e.getCategoria())){
+                         //System.out.println(e.mostrarLibro());
+                         e.mostrarLibro();
+                        }
+                    }break;
                 case 3: 
                     String literatura = "Literatura";
+                    System.out.println("----------------------------------------------------------------------------");
+                    System.out.println("ISBN"+"           \t"+"Nombre"+"              \t"+"Autor"+"             \t"+"Precio");
+                    System.out.println("------------------------------------------------------------------------------");
                     for (Libro e: listaLibro){
                         if(literatura.equals(e.getCategoria()) ){
-                            System.out.println(e.mostrarLibro());
+                           // System.out.println(e.mostrarLibro());
+                           e.mostrarLibro();
                         }
                     }break;
                 case 4:
+                    
                     for( Libro e: listaLibro){
                         System.out.println(e.mostrarTitulo());
                     } break;

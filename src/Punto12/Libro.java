@@ -75,9 +75,13 @@ public class Libro { // Creamos la clase libro
 
   
     
-    public String mostrarLibro(){ // Método para mostrar el libro 
+    //public String mostrarLibro(){ // Método para mostrar el libro 
          
-        return "El ISBN del libro es:  "+  + ISBN +", el título es:  "+ titulo + ", el autor es : " + autor + ", el precio es: "  + precio +" y la categoria es: " + categoria  ; // Retorna la cadena + el titulo
+       // return "El ISBN del libro es:  "+  + ISBN +", el título es:  "+ titulo + ", el autor es : " + autor + ", el precio es: "  + precio +" y la categoria es: " + categoria  ; // Retorna la cadena + el titulo
+    //}
+     public void mostrarLibro(){ // Método para mostrar el libro 
+         
+        System.out.println(getISBN()+"\t"+getTitulo()+"                     \t"+getAutor()+"\t"+getPrecio());
     }
 
     public String mostrarTitulo(){
