@@ -5,7 +5,7 @@
  */
 package Punto11;
 
-import java.util.Random;
+import java.util.logging.Logger;
 
 /**
  *
@@ -14,76 +14,65 @@ import java.util.Random;
 public class Zapatilla {
     private String color;
     private int numero;
-    private String [] marcas = {"Nike", "Puma", "Salomon", "Reebok", "Columbia"};
     private String marca;
-    private String [] estados = {"Original" , "Copia"};
-    private String estado;
-    private Random rand = new Random(System.nanoTime());
-
+    private String calidad;
+    private double precio;
+    
     public Zapatilla() {
         this.color = color;
         this.numero = numero;
-        this.marca = generarMarca();
-        this.estado = generarEstado();
+        this.marca = marca;
+        this.calidad = calidad;
+        this.precio = precio;
     }
-    
-     public Zapatilla(String color, int numero, String marca, String estado) {
+
+    public Zapatilla(String color, int numero, String marca, String calidad, double precio) {
         this.color = color;
-        this.numero=numero;
-        this.marca = generarMarca();
-        this.estado = generarEstado();
-    }
-     
-     private String generarMarca(){
-		String t = "";
-		int indice = rand.nextInt(this.marcas.length);
-		
-		t = this.marcas[indice];
-		
-		return t;
-	}
-    
-    private String generarEstado(){
-		String t = "";
-		int indice = rand.nextInt(this.estados.length);
-		
-		t = this.estados[indice];
-		
-		return t;
-	}
-
-
-    public void setNumero(int numero) {
         this.numero = numero;
+        this.marca = marca;
+        this.calidad = calidad;
+        this.precio = precio;
+    }
+
+    public String getColor() {
+        return color;
     }
 
     public int getNumero() {
         return numero;
     }
 
-    public void setColor(String Color) {
-        this.color = Color;
-    }
-
-    public String getColor() {
-        return color;
-    }
-    
-    
     public String getMarca() {
         return marca;
     }
 
-    public String getEstado() {
-        return estado;
+    public String getCalidad() {
+        return calidad;
     }
 
-      public void setMarca(String marca) {
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public void setMarca(String marca) {
         this.marca = marca;
     }
 
-    public void setEstado(String estado) {
-        this.estado = estado;
+    public void setCalidad(String calidad) {
+        this.calidad = calidad;
     }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+   
     
 }

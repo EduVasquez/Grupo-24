@@ -14,6 +14,9 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
+        String marca, color, calidad ;
+        int num;
+        double precio;
         char resp;
         int j=0;
         int i=0;
@@ -25,11 +28,29 @@ public class Principal {
              System.out.println("*********************************");
              System.out.println("       Zapatilla: " +j);
              System.out.println("*********************************");
-             System.out.print("Ingrese color de zapatilla : ");
-             String color = scn.next();
-             System.out.print("Ingrese numero de zapatilla : ");
-             int num = scn.nextInt();
-             Zapatilla zap = new Zapatilla(color, num, zapa.getMarca(), zapa.getEstado());
+            
+             do{
+                 System.out.print("Ingrese marca de la zapatilla : ");
+                 marca = scn.next();   
+             }while("".equals(marca));
+             do{
+                  System.out.print("Ingrese numero de zapatilla : ");
+                  num = scn.nextInt();  
+             }while(num<0);
+             do{
+                  System.out.print("Ingrese color de la zapatilla : ");
+                  color = scn.next();
+             }while("".equals(color));
+             do{
+                  System.out.print("Ingrese calidad de la zapatilla : ");
+                  calidad = scn.next();
+             }while("".equals(calidad));
+             do{
+                  System.out.print("Ingrese precio de la zapatilla : ");
+                  precio = scn.nextDouble();
+             }while(precio<0);
+             
+             Zapatilla zap = new Zapatilla(marca, num, color, calidad, precio );
              gz.agregarZapatilla(zap);
              System.out.println("   ");
              System.out.print("Desea ingresar mas datos s/n : ");
@@ -42,12 +63,12 @@ public class Principal {
         System.out.println("******************************************************");
         System.out.println("              MOSTRAR ZAPATILLAS");
         System.out.println("******************************************************");
-         System.out.println("N°"+ " \t"+"Color"+"   \t"+"Nro de Calzado"+"   \t"+"Marca"+"   \t"+"Estado");
-         System.out.println("---------------------------------------------------------------------------");
-        for(Zapatilla circulo: gz.getZapatilla()){
+         System.out.println("N°"+"  \t  "+"Marca"+" \t  "+"Nro de Calzado"+"    \t  "+"Color"+" \t  "+"Calidad"+"   \t  "+"Precio");
+         System.out.println("----------------------------------------------------------------------------------------");
+        for(Zapatilla zap: gz.getZapatilla()){
             
             i=i+1;
-            System.out.println(i+"\t"+ circulo.getColor()+"              \t"+circulo.getNumero()+"            \t"+circulo.getMarca()+"    \t"+circulo.getEstado());
+            System.out.println(i+"  \t  "+ zap.getMarca()+"           \t  "+zap.getNumero()+"           \t  "+zap.getColor()+"  \t  "+zap.getCalidad()+"    \t  "+zap.getPrecio());
             
         }
     }
