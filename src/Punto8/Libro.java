@@ -70,9 +70,9 @@ public class Libro { // Creamos la clase libro
 
   
     
-    public String mostrarLibro(){ // Método para mostrar el libro 
+     public void mostrarLibro(){ // Método para mostrar el libro 
          
-        return "El nombre de los libros ingresados son: "+  titulo; // Retorna la cadena + el titulo
+        System.out.println(getISBN()+"\t"+getTitulo()+"\t"+getAutor()+"\t"+getPrecio());
     }
 
 }
