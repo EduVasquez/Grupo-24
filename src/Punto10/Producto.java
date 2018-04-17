@@ -14,6 +14,11 @@ public class Producto {
     private String nombre;
     private double preciounitario;
     private int cuota;
+   
+    
+    public Producto(){
+        
+    }
     
 
     public Producto(int codigo, String nombre, double preciounitario, int cuota) {
@@ -21,6 +26,8 @@ public class Producto {
         this.nombre = nombre;
         this.preciounitario = preciounitario;
         this.cuota = cuota;
+     
+    
     }
 
     public int getCodigo() {
@@ -38,6 +45,9 @@ public class Producto {
     public int getCuota() {
         return cuota;
     }
+
+
+ 
 
     public void setCodigo(int codigo) {
         this.codigo = codigo;
@@ -59,10 +69,10 @@ public class Producto {
          System.out.println(getCodigo()+"       \t"+getNombre()+"        \t"+getPreciounitario()+"           \t"+getCuota()+"           \t"+calcularCuota());;
     }
      
-      public double calcularCuota(){
-         double cuo;
-             cuo= 0.015*getPreciounitario()*getCuota();
-         return cuo;
+     public double calcularCuota(){
+        
+             return 0.015*getPreciounitario()*getCuota()+getPreciounitario();
+       
      }
     
     

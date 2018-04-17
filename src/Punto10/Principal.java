@@ -18,9 +18,14 @@ public class Principal {
          String nomb;
          double pu;
          char resp;
+         int i=0;
          GestorProducto gp = new GestorProducto();
+         Producto product = new Producto();
          
          do{
+             i=i+1;
+             System.out.println("   ");
+             System.out.println("***************PRODUCTO N°"+i+"*****************");
              System.out.print("Ingrse codigo de producto : ");
              cod = scn.nextInt();
              do{
@@ -41,8 +46,13 @@ public class Principal {
              resp = scn.next().charAt(0);
              
          }while(resp!='n'&&resp!='N');
+          System.out.println("------------------------------------------------------------------------------------");
           System.out.println("Codigo"+"  \t"+"Nombre"+"  \t"+"Precio Unitario"+" \t"+"Cuotas"+"  \t"+"Precio Total");
-         gp.mostrarProducto();
+          System.out.println("----------------------------------------------------------------------------------- ");
+          gp.mostrarProducto();
+          
+          System.out.println("  ");
+          System.out.println("El total a cobrar es : $"+gp.calcularPrecioTotal() );
          
        
      }

@@ -34,6 +34,13 @@ public class GestorProducto {
             
         }
     }
+     public double calcularPrecioTotal(){
+         double precio=0;
+         for(Producto p: this.getProducto()){
+             precio = precio+p.calcularCuota();
+         }
+        return precio;     
+     }
      
    
     
