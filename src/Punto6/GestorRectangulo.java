@@ -12,10 +12,10 @@ import java.util.ArrayList;
  *
  * @author dhal_
  */
-public class GestorRectangulo {
-      private ArrayList<Rectangulo> rectangulo = new ArrayList();
+public class GestorRectangulo { // Creamos la clase GestorRectangulo, que será un ArrayList 
+      private ArrayList<Rectangulo> rectangulo = new ArrayList(); // Creamos un ArrayList
 
-        public ArrayList<Rectangulo> getRectangulo() {
+        public ArrayList<Rectangulo> getRectangulo() { 
             return rectangulo;
         }
 
@@ -26,17 +26,17 @@ public class GestorRectangulo {
         
 
    
-    public void agregarRectangulo(Rectangulo rect){
+    public void agregarRectangulo(Rectangulo rect){ // Creamos el métodoa gregarRectangulo
         
         this.rectangulo.add(rect);
     }
     
-    public void eliminarRectangulo(int r){
+    public void eliminarRectangulo(int r){ // Creamos el método eliminarRectangulo
         this.rectangulo.remove(r-1);
     }
     
-    public void mostrarRectangulos(){
-        for(Rectangulo r: this.getRectangulo()){
+    public void mostrarRectangulos(){ // Creamos el método mostrarRectangulos 
+        for(Rectangulo r: this.getRectangulo()){ 
             System.out.println("--------------------------------------------------");
             System.out.println("    RECTANGULO N°:" + (this.rectangulo.indexOf(r)+1));
             System.out.println("--------------------------------------------------");
