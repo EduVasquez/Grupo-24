@@ -9,10 +9,10 @@ package Punto7;
  *
  * @author dhal_
  */
-public class ArregloDeAutos {
+public class ArregloDeAutos { // Craemos la clase ArregloDeAutos que será un Array
     private Auto[] arreglo;
     
-    public ArregloDeAutos() {
+    public ArregloDeAutos() { // Definimos al constructor que será un Array con el tamaño
         arreglo = new Auto[5];
     }
 
@@ -20,7 +20,7 @@ public class ArregloDeAutos {
         this.arreglo = arreglo;
     }
     
-    public ArregloDeAutos(int tamanioArreglo){
+    public ArregloDeAutos(int tamanioArreglo){  
         arreglo = new Auto[tamanioArreglo];
     }
     
@@ -41,7 +41,7 @@ public class ArregloDeAutos {
     public void setArreglo(Auto[] arreglo) {
         this.arreglo = arreglo;
     }
-     public void buscarAuto(String aut){
+     public void buscarAuto(String aut){ // Definimos el método buscarAuto
         for (Auto a : arreglo) {
             if(aut == null ? a.getNombre() == null : aut.equals(a.getNombre()))
                 a.mostrarDatos();

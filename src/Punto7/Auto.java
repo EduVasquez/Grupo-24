@@ -9,7 +9,7 @@ package Punto7;
  *
  * @author dhal_
  */
-public class Auto {
+public class Auto { // Creamos la clase auto y definimos las variables que vamos a usar
     private String nombre;
     private String patente;
     private int modelo;
@@ -17,11 +17,11 @@ public class Auto {
     private String color;
     private String tipoCombustible;
     
-    public Auto(){
+    public Auto(){ // Constructor 1
         
     }
     
-    public Auto(String nombre, String patente, int modelo, String marca, String color, String tipoCombustible){
+    public Auto(String nombre, String patente, int modelo, String marca, String color, String tipoCombustible){ // Constructor 2
         this.nombre=nombre;
         this.patente=patente;
         this.modelo=modelo;
@@ -30,7 +30,7 @@ public class Auto {
         this.tipoCombustible=tipoCombustible;
     }
     
-    public void mostrarDatos(){
+    public void mostrarDatos(){ // Método que mostrará todas las variables del auto
          System.out.println(getNombre() + "        " +getPatente() +"         " +getModelo() + "       " +getMarca() + "         " +getColor() + "         " +getTipoCombustible());;
     }
     
