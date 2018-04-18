@@ -13,62 +13,104 @@ package Punto12;
 
 public class Libro { // Creamos la clase libro
     private int ISBN; // Creamos las variables que vamos a necesitar
-    private String titulo, autor; // Creamos las variables que vamos a necesitar
+    private String titulo;
+    private Autor autor; // Creamos las variables que vamos a necesitar
     private double precio; // Creamos las variables que vamos a necesitar
     private String categoria;
     public Libro() { // Constructor1 
     }
-     public Libro(int ISBN, String titulo, String autor, double precio, String categoria) { // Constructor3 para el punto 12 
+     public Libro(int ISBN, String titulo, Autor autor, double precio, String categoria) { // Constructor3 para el punto 12 
       this.ISBN = ISBN; // Le damos las variables
         this.titulo = titulo; // Le damos las variables
         this.autor = autor; // Le damos las variables
         this.precio = precio; // Le damos las variables
         this.categoria = categoria; // Le damos las variables
      }
-
-    public Libro(int ISBN, String titulo, String autor, double precio) { // Constructor 2 
+     
+     /**
+     * @param ISBN
+     * @param titulo
+     * @param autor
+     * @param precio
+      */
+    public Libro(int ISBN, String titulo, Autor autor, double precio) { // Constructor 2 
         this.ISBN = ISBN; // Le damos las variables
         this.titulo = titulo; // Le damos las variables
         this.autor = autor; // Le damos las variables
         this.precio = precio; // Le damos las variables
     }
- // Setters and Getters
+    
+    public Libro(String categoria) { // Constructor 2 
+        this.categoria = categoria; // Le damos las variables
+        
+    }
+    
+    /**
+     * @return el valor de ISBN
+     */
     public int getISBN() {
         return ISBN;
     }
-
+    
+    /**
+     * @param ISBN
+     */
     public void setISBN(int ISBN) {
         this.ISBN = ISBN;
     }
-
+    
+    /**
+     * @return el valor de titulo
+     */
     public String getTitulo() {
         return titulo;
     }
-
+    
+    /**
+     * @param titulo
+     */
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
-
-    public String getAutor() {
+    
+    /**
+     * @return el valor de autor
+     */
+    public Autor getAutor() {
         return autor;
     }
-
-    public void setAutor(String autor) {
+    
+    /**
+     * @param autor
+     */
+    public void setAutor(Autor autor) {
         this.autor = autor;
     }
-
+    
+    /**
+     * @return el valor de precio
+     */
     public double getPrecio() {
         return precio;
     }
-
+    
+    /**
+     * @param precio
+     */
     public void setPrecio(double precio) {
         this.precio = precio;
     }
-
+    
+    /**
+     * @return el valor de categoria
+     */
     public String getCategoria() {
         return categoria;
     }
-
+    
+    /**
+     * @param categoria
+     */
     public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
