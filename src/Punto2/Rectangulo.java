@@ -6,12 +6,12 @@
 package Punto2;
 
 
-public class Rectangulo {
+public class Rectangulo { // Definimos la clase y las variables que vamos a usar
     private int x;
     private int y;
     private int altura;
     private int base;
-    public Rectangulo(int x, int y, int base, int altura){
+    public Rectangulo(int x, int y, int base, int altura){ // Constructor 
         this.x=x;
         this.y=y;
         this.altura=altura;
@@ -41,20 +41,20 @@ public class Rectangulo {
      public void setAltura(int altura){
         this.altura=altura;
     }
-    public int calularPuntoUno(){
+    public int calularPuntoUno(){ // Definimos un método
         int nuevox=x+base;
         return nuevox;        
     }
-    public int calularPuntoDos(){
+    public int calularPuntoDos(){ // Definimos un método
         int nuevoy=y+altura;
         return nuevoy;        
     }
     
-    public double calcularPerimetro(){
+    public double calcularPerimetro(){ // Definimos un método
         double perimetro=2*(altura+base);
         return perimetro;
     }
-    public double calcularSuperficie(){
+    public double calcularSuperficie(){ // Definimos un método
         double superficie=(base*altura);
         return superficie;
     }
