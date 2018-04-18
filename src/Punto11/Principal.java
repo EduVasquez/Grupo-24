@@ -20,8 +20,8 @@ public class Principal {
         char resp;
         int j=0;
         int i=0;
-        Zapatilla zapa = new Zapatilla();
-        GestorZapatilla gz = new GestorZapatilla();
+        Zapatilla zapa = new Zapatilla(); // Se crea un objeto de Zapatilla
+        GestorZapatilla gz = new GestorZapatilla(); // Se crea un objeto de GestorZapatilla
 
         do{
              j=j+1;
@@ -29,35 +29,35 @@ public class Principal {
              System.out.println("       Zapatilla: " +j);
              System.out.println("*********************************");
             
-             do{
+             do{ // Usamos  do while para validar datos
                  System.out.print("Ingrese marca de la zapatilla : ");
-                 marca = scn.next();   
-             }while("".equals(marca));
+                 marca = scn.next();   // Guardamos en la variable marca lo que el usuario ingresó
+             }while("".equals(marca)); 
              do{
                   System.out.print("Ingrese numero de zapatilla : ");
-                  num = scn.nextInt();  
+                  num = scn.nextInt();  // Guardamos en la variable marca lo que el usuario ingresó
              }while(num<0);
              do{
                   System.out.print("Ingrese color de la zapatilla : ");
-                  color = scn.next();
+                  color = scn.next();// Guardamos en la variable marca lo que el usuario ingresó
              }while("".equals(color));
              do{
                   System.out.print("Ingrese calidad de la zapatilla : ");
-                  calidad = scn.next();
+                  calidad = scn.next();// Guardamos en la variable marca lo que el usuario ingresó
              }while("".equals(calidad));
              do{
                   System.out.print("Ingrese precio de la zapatilla : ");
-                  precio = scn.nextDouble();
+                  precio = scn.nextDouble();// Guardamos en la variable marca lo que el usuario ingresó
              }while(precio<0);
              
-             Zapatilla zap = new Zapatilla(marca, num, color, calidad, precio );
-             gz.agregarZapatilla(zap);
+             Zapatilla zap = new Zapatilla(marca, num, color, calidad, precio ); // Le damos al constructor los datos que el usuario ingresó
+             gz.agregarZapatilla(zap); // Le damos al objeto gz el método agregarZapatilla con los datos que el usuario ingresó
              System.out.println("   ");
-             System.out.print("Desea ingresar mas datos s/n : ");
-             resp = scn.next().charAt(0);
+             System.out.print("Desea ingresar mas datos s/n : "); // Preguntamos si quiere agregar más datos 
+             resp = scn.next().charAt(0); // Almacenamos la respuesta en la variable resp
              System.out.println("   ");
              
-         }while(resp!='n'&& resp!='N');
+         }while(resp!='n'&& resp!='N'); // Si no quiere agregar nada, se mostrará la zapatilla con los datos que el usuario ingresó
         
         System.out.println("   ");  
         System.out.println("******************************************************");

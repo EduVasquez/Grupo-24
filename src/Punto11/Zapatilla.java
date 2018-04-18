@@ -11,14 +11,14 @@ import java.util.logging.Logger;
  *
  * @author dhal_
  */
-public class Zapatilla {
+public class Zapatilla { // Se crea la clase Zapatilla y se le indican las variables
     private String color;
     private int numero;
     private String marca;
     private String calidad;
     private double precio;
     
-    public Zapatilla() {
+    public Zapatilla() { // Constructor 1 
         this.color = color;
         this.numero = numero;
         this.marca = marca;
@@ -26,7 +26,7 @@ public class Zapatilla {
         this.precio = precio;
     }
 
-    public Zapatilla(String color, int numero, String marca, String calidad, double precio) {
+    public Zapatilla(String color, int numero, String marca, String calidad, double precio) { // Constructor 2
         this.color = color;
         this.numero = numero;
         this.marca = marca;
@@ -34,7 +34,7 @@ public class Zapatilla {
         this.precio = precio;
     }
 
-    public String getColor() {
+    public String getColor() { 
         return color;
     }
 

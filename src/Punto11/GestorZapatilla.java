@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author dhal_
  */
-public class GestorZapatilla {
+public class GestorZapatilla { // Se crea la clase GestorZapatilla y un ArrayList de tipo Zapatilla
     private ArrayList<Zapatilla> zapatillas = new ArrayList();
 
     
