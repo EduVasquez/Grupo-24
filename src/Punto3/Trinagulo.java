@@ -9,12 +9,12 @@ package Punto3;
  *
  * @author dhal_
  */
-public class Trinagulo {
+public class Trinagulo { // Creamos la clase y sus variables
     private double lado1;
     private double lado2;
     private double lado3;
     
-    public Trinagulo(double lado1, double lado2, double lado3){
+    public Trinagulo(double lado1, double lado2, double lado3){ // Definimos las variables para el constructor 
         this.lado1=lado1;
         this.lado2=lado2;
         this.lado3=lado3;
@@ -38,9 +38,10 @@ public class Trinagulo {
     }
       public void setLado3(double lado3){
         this.lado3=lado3;
-    }
+    } 
     
-      public boolean mostrarFigura(){
+    
+      public boolean mostrarFigura(){ // Creamos el método mostrarFigura
           
           boolean ban=false;
           
@@ -50,7 +51,7 @@ public class Trinagulo {
        
              return ban;
         }
-      public double obtenerPerimetro(){
+      public double obtenerPerimetro(){ // Creamos el método obtenerPerimetro
          
           return (lado1+lado2+lado3);
       }
