@@ -11,13 +11,13 @@ import java.util.ArrayList;
  *
  * @author dhal_
  */
-public class GestorCirculo {
-    private ArrayList<Circulo> circulos = new ArrayList();
+public class GestorCirculo { // Creamos la clase GestorCirculo
+    private ArrayList<Circulo> circulos = new ArrayList();  // Creamos un ArrayList 
 
     /**
      * @return the circulos
      */
-    public ArrayList<Circulo> getCirculos() {
+    public ArrayList<Circulo> getCirculos() {  // Constructor
         return circulos;
     }
 

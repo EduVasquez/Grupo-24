@@ -9,11 +9,11 @@ package Punto5;
  *
  * @author dhal_
  */
-public class Circulo {
+public class Circulo { // Creamos la clase Circulo
     private double radio;
     private String color;
 
-    public Circulo(double radio, String color) {
+    public Circulo(double radio, String color) { // Le damos las variables al constructor
         this.radio = radio;
         this.color = color;
     }
@@ -34,7 +34,7 @@ public class Circulo {
         this.color = color;
     }
     
-    public double calcularSup(){
+    public double calcularSup(){ // Creamos el método calcularSup que devolverá la superficie 
         return 2*Math.PI*Math.pow(radio, 2);
     }
 }
