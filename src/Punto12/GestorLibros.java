@@ -63,7 +63,7 @@ public class GestorLibros {
     }
     
     
-    public void mostrarCategorias(){
+    public void mostrarCategoria(){
         
         System.out.println("-------------------------");
         System.out.println("Las categorias son :");
@@ -73,8 +73,11 @@ public class GestorLibros {
             System.out.println( "Opcion ["+(this.getCategoria().indexOf(cat)+1)+"]: "+cat );
         }
     }
-        
-    public void Buscar (GestorAutor ga){
+    
+    /**
+     * @param ga
+     */
+    public void buscar (GestorAutor ga){
         
         Scanner scn=new Scanner(System.in);
         int resp ;
@@ -89,7 +92,7 @@ public class GestorLibros {
         switch  (resp) {
     
             case 1 :{
-                this.mostrarCategorias();
+                this.mostrarCategoria();
                 System.out.println("    ");
                 System.out.print("Elija un Opcion de Categoria :");
                 int r =scn.nextInt();

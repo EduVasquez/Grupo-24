@@ -48,7 +48,7 @@ public class Principal {
     gl.agregarCategoria("Programación");
     gl.agregarCategoria("Literatura");
          
-    gl.Buscar(ga);
+gl.buscar(ga);// se llama a la funcion buscar
     
 }
 }
