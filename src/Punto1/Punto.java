@@ -13,7 +13,7 @@ public class Punto {
     private int x;
     private int y;
     
-    public Punto(int x, int y){
+    public Punto(int x, int y){ // Constructor
         this.x=x;
         this.y=y;
     }
@@ -34,7 +34,7 @@ public class Punto {
      public void setY(int y){
          this.y=y;
      }
-     public double obtenerDistancia (Punto p){
+     public double obtenerDistancia (Punto p){ // Método 
          return Math.sqrt(Math.pow(p.getX()- x, 2)+ (Math.sqrt(Math.pow(p.getY()-y, 2))));
      }
     

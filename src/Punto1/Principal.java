@@ -15,8 +15,9 @@ public class Principal {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Punto punto1 = new Punto(1,3);
-        Punto punto2 = new Punto (4,6);
+        Punto punto1 = new Punto(1,3); // Se crea un objeto de la clase Punto y le damos los valores al constructor
+        Punto punto2 = new Punto (4,6);// Se crea un objeto de la clase Punto y le damos los valores al constructor
+        // Imprime la cadena y se llama al método obtenerDistancia
         System.out.println("La distancia que hay entre el punto1 y punto2 es :" + punto1.obtenerDistancia(punto2));
     }
     
