@@ -29,12 +29,17 @@ public class Principal {
         
         gr.mostrarRectangulos(); // Usamos método mostrarRectangulos para visualizar el número de rectángulo, las coordenadas, la superficie y el perímetro
         do{
-            System.out.print("Ingrese un numero de Rectangulo : "); 
+            System.out.println("    ");
+            System.out.print("Ingrese un numero de Rectangulo para ser eliminado : "); 
             r = scn.nextInt(); // El número que ingrese eliminará al rectángulo
         }while(r>=5);
         if (r<5){
-            gr.eliminarRectangulo(r); // Usamos el método para eliminar el rectángulo 
+            gr.eliminarRectangulo(r); // Usamos el método para eliminar el rectángulo
+            System.out.println("    ");
+            System.out.println("**************************************");
             System.out.println("El rectangulo fue eliminado con exito");
+            System.out.println("**************************************");
+            System.out.println("    ");
             System.out.println("Mostrar los rectangulos restantes");
             gr.mostrarRectangulos();   //Usamos el método para mostrar los rectángulos que quedaron
         }

@@ -14,25 +14,36 @@ import java.util.ArrayList;
  */
 public class GestorRectangulo { // Creamos la clase GestorRectangulo, que será un ArrayList 
       private ArrayList<Rectangulo> rectangulo = new ArrayList(); // Creamos un ArrayList
-
+        /**
+     * @return el valor del rectangulo
+         */
         public ArrayList<Rectangulo> getRectangulo() { 
             return rectangulo;
         }
-
+        
+        /**
+     * @param rectangulo
+         */
         public void setRectangulo(ArrayList<Rectangulo> rectangulo) {
             this.rectangulo = rectangulo;
         }
         
         
 
-   
+   /**
+     * @param rect
+    */
     public void agregarRectangulo(Rectangulo rect){ // Creamos el métodoa gregarRectangulo
         
         this.rectangulo.add(rect);
     }
     
+    /**
+     * @param r
+     */
     public void eliminarRectangulo(int r){ // Creamos el método eliminarRectangulo
         this.rectangulo.remove(r-1);
+        
     }
     
     public void mostrarRectangulos(){ // Creamos el método mostrarRectangulos 
